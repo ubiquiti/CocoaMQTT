@@ -1,25 +1,22 @@
 {
-  "object": {
-    "pins": [
-      {
-        "package": "MqttCocoaAsyncSocket",
-        "repositoryURL": "https://github.com/leeway1208/MqttCocoaAsyncSocket",
-        "state": {
-          "branch": null,
-          "revision": "ce3e18607fd01079495f86ff6195d8a3ca469f73",
-          "version": "1.0.8"
-        }
-      },
-      {
-        "package": "Starscream",
-        "repositoryURL": "https://github.com/daltoniam/Starscream.git",
-        "state": {
-          "branch": null,
-          "revision": "ac6c0fc9da221873e01bd1a0d4818498a71eef33",
-          "version": "4.0.6"
-        }
+  "pins" : [
+    {
+      "identity" : "mqttcocoaasyncsocket",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/leeway1208/MqttCocoaAsyncSocket",
+      "state" : {
+        "revision" : "ce3e18607fd01079495f86ff6195d8a3ca469f73",
+        "version" : "1.0.8"
       }
-    ]
-  },
-  "version": 1
+    },
+    {
+      "identity" : "shared.ios.starscream",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ubiquiti/shared.ios.Starscream",
+      "state" : {
+        "revision" : "250579a0cea7a1bae04bd34cc21d7669020622fd"
+      }
+    }
+  ],
+  "version" : 2
 }
