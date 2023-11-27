@@ -14,7 +14,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/ubiquiti/shared.ios.Starscream",
       "state" : {
-        "revision" : "250579a0cea7a1bae04bd34cc21d7669020622fd"
+        "branch" : "master",
+        "revision" : "96aa85af5018fa97e9b6dc2b0c26df352adff751"
       }
     }
   ],
