@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/leeway1208/MqttCocoaAsyncSocket", from: "1.0.8"),
-        .package(url: "https://github.com/ubiquiti/shared.ios.Starscream", branch: "master"), // Following UniFiCloudAccess https://github.com/ubiquiti/unifi.apple.cloudaccess/blob/main/Package.swift
+        .package(url: "https://github.com/ubiquiti/shared.ios.Starscream", from: "4.0.7"), // Following UniFiCloudAccess https://github.com/ubiquiti/unifi.apple.cloudaccess/blob/1.0.4/Package.swift
     ],
     targets: [
         .target(name: "CocoaMQTT",
