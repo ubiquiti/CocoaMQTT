@@ -8,7 +8,7 @@ let package = Package(
     platforms: [
         .macOS(.v10_13),
         .iOS(.v12),
-        .tvOS(.v10)
+        .tvOS(.v12)
     ],
     products: [
         .library(name: "CocoaMQTT", targets: [ "CocoaMQTT" ]),
@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/leeway1208/MqttCocoaAsyncSocket", from: "1.0.8"),
-        .package(url: "https://github.com/ubiquiti/shared.ios.Starscream", from: "4.0.7"), // Following UniFiCloudAccess https://github.com/ubiquiti/unifi.apple.cloudaccess/blob/1.0.4/Package.swift
+        .package(url: "https://github.com/ubiquiti/shared.apple.Starscream", from: "4.0.7"), // Following UniFiCloudAccess https://github.com/ubiquiti/unifi.apple.cloudaccess/blob/4.0.0/Package.swift
     ],
     targets: [
         .target(name: "CocoaMQTT",
@@ -25,7 +25,7 @@ let package = Package(
                 exclude: ["CocoaMQTTWebSocket.swift"],
                 swiftSettings: [ .define("IS_SWIFT_PACKAGE")]),
         .target(name: "CocoaMQTTWebSocket",
-                dependencies: [ "CocoaMQTT", .product(name: "Starscream", package: "shared.ios.Starscream") ],
+                dependencies: [ "CocoaMQTT", .product(name: "Starscream", package: "shared.apple.Starscream") ],
                 path: "Source",
                 sources: ["CocoaMQTTWebSocket.swift"],
                 swiftSettings: [ .define("IS_SWIFT_PACKAGE")]),
